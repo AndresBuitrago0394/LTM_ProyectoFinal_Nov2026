@@ -4978,7 +4978,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114793620227127496}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Gamekit2D.Bullet, Assembly-CSharp
         m_MethodName: ReturnToPool
         m_Mode: 1
         m_Arguments:
@@ -4991,7 +4991,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 114793620227127496}
         m_TargetAssemblyTypeName: Gamekit2D.Bullet, Assembly-CSharp
-        m_MethodName: OnSHitDamageable
+        m_MethodName: OnSpitHitDamageable
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

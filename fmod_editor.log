@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x74dd92a08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x75d1f2a08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,12 +17,179 @@
 [LOG] Manager::init                            : done.
 [LOG] BankLoader::serializeBank                : fileversion = 153, compatVersion = 153 (oldest = 44, newest = 153)
 [LOG] BankLoader::serializeBank                : fileversion = 153, compatVersion = 153 (oldest = 44, newest = 153)
-[LOG] BankLoader::serializeBank                : fileversion = 153, compatVersion = 153 (oldest = 44, newest = 153)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e9a7b88, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e9a7b88
+[LOG] SystemI::createSoundInternal             :     Create name='../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds        = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist       = 0x7533dd350
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wind, Designed, Swirling Wind, Howling SND124720 1', format=5, channels=1, frequency=48000, lengthbytes=1775392, lengthpcm=11030400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.076954.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e9a7b88
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e9581c8, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e9581c8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e9581c8
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds        = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist       = 0x3006e67a4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen            = 0x376ea9964
+[LOG] SystemI::createSoundInternal             : exinfo->userclose           = 0x376ea9a38
+[LOG] SystemI::createSoundInternal             : exinfo->userread            = 0x376ea9a74
+[LOG] SystemI::createSoundInternal             : exinfo->userseek            = 0x376ea9b44
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata        = 0x75335ea08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             : exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_ellen_movement_jump', format=5, channels=1, frequency=48000, lengthbytes=2848, lengthpcm=15376, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.045356.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds        = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist       = 0x3006e67a4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen            = 0x376ea9964
+[LOG] SystemI::createSoundInternal             : exinfo->userclose           = 0x376ea9a38
+[LOG] SystemI::createSoundInternal             : exinfo->userread            = 0x376ea9a74
+[LOG] SystemI::createSoundInternal             : exinfo->userseek            = 0x376ea9b44
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata        = 0x75335ea08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             : exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_ellen_movement_jumpHard', format=5, channels=1, frequency=48000, lengthbytes=6048, lengthpcm=34000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.059256.
+[LOG] SystemI::createSound                     : filename = ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e958c48, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e958c48
+[LOG] SystemI::createSoundInternal             :     Create name='../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds        = 1
+[LOG] SystemI::createSound                     :     filename = ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              :     index = 0 / 5
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x74e9588c8, queue head = 0x7533dd7d8, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist       = 0x7533de850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wind, Designed, Swirling Wind, Howling SND124720 1', format=5, channels=1, frequency=48000, lengthbytes=1775392, lengthpcm=11030400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.076954.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e958c48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e9588c8
+[LOG] SystemI::createSoundInternal             :     Create name='../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds        = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist       = 0x7533decd0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wind, Designed, Swirling Wind, Howling SND124720 1', format=5, channels=1, frequency=48000, lengthbytes=1775392, lengthpcm=11030400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.076954.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e9588c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e958fc8, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e958fc8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e959348, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e958fc8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e959348
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e959348
+[LOG] SoundI::release                          : Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e9a7b88)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x7533dd808)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e9581c8)
+[LOG] SystemI::createSound                     : filename = ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e9581c8, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e9581c8
+[LOG] SystemI::createSoundInternal             :     Create name='../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize              = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length              = 3052960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset          = 54208
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds        = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist       = 0x7533de550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum    = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype  = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype  = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->fsbguid             = 0x74636c7a8
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wind, Designed, Swirling Wind, Howling SND124720 1', format=5, channels=1, frequency=48000, lengthbytes=1775392, lengthpcm=11030400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.076954.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e9581c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x74e959508, queue head = 0x7533dd7d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x74e959508
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x74e959508
+[LOG] SoundI::release                          : Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e9588c8)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x7533dee88)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e959348)
+[LOG] SoundI::release                          : Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e9581c8)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x7533df008)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e959508)
+[LOG] SoundI::release                          : Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e958c48)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x7533ded08)
+[LOG] SoundI::release                          :     Wind, Designed, Swirling Wind, Howling SND124720 1 (0x74e958fc8)
+[LOG] SoundI::release                          :  (0x7533de108)
+[LOG] SoundI::release                          :     sfx_ellen_movement_jumpHard (0x7533ddf88)
+[LOG] SoundI::release                          :  (0x7533dd508)
+[LOG] SoundI::release                          :     sfx_ellen_movement_jump (0x7533de288)
+[LOG] SoundI::release                          :  (0x75e2ba708)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_01 (0x756626888)
+[LOG] SoundI::release                          :  (0x750c63d88)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_02 (0x750c62a08)
+[LOG] SoundI::release                          :  (0x750c63308)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_03 (0x750c63488)
+[LOG] SoundI::release                          :  (0x750c63788)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_04 (0x750c61508)
+[LOG] SoundI::release                          :  (0x750c60d88)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_05 (0x759e49f88)
+[LOG] SoundI::release                          :  (0x750c62d08)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_06 (0x750c62e88)
+[LOG] SoundI::release                          :  (0x750c60608)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_07 (0x750c62708)
+[LOG] SoundI::release                          :  (0x750c61208)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footstep_stone_08 (0x750c61808)
+[LOG] SoundI::release                          :  (0x750c60908)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_01 (0x750c63188)
+[LOG] SoundI::release                          :  (0x750c62288)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_02 (0x750c63c08)
+[LOG] SoundI::release                          :  (0x750c60788)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_03 (0x750c60008)
+[LOG] SoundI::release                          :  (0x750c62408)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_04 (0x750c63a88)
+[LOG] SoundI::release                          :  (0x750c61988)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_05 (0x750c61e08)
+[LOG] SoundI::release                          :  (0x750c61088)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_06 (0x750c62888)
+[LOG] SoundI::release                          :  (0x750c60a88)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_07 (0x750c61b08)
+[LOG] SoundI::release                          :  (0x750c60308)
+[LOG] SoundI::release                          :     sfx_ellen_movement_footsteps_grass_08 (0x750c60f08)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::closeInternal                   : Closed.
+[ERR] ~Global                                  : assertion: 'gSystemInitCount == 0' failed

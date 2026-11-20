@@ -19,38 +19,14 @@ MonoBehaviour:
     Data3: 1568884359
     Data4: 1852083282
   Banks:
-  - {fileID: 6393016472587474342}
-  IsStream: 0
+  - {fileID: -662044786326953975}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &-8496686097304596502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ellen_Land/Velocity
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Velocity
-  StudioPath: 
-  Min: -50
-  Max: 0
-  Default: -50
-  ID:
-    data1: 4083803882
-    data2: 2851082181
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Length: 13000
 --- !u!114 &-8277701052565771297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +46,7 @@ MonoBehaviour:
     Data3: -924288614
     Data4: -1783947814
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -132,7 +108,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-5912800556398484936
+--- !u!114 &-5773049041144878198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,20 +117,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Box_Falling/Velocity
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Velocity
-  StudioPath: 
-  Min: -50
-  Max: 0
-  Default: -50
-  ID:
-    data1: 4083803882
-    data2: 2851082181
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639307301527704288
+  FileSizes:
+  - Name: Desktop
+    Value: 2122
   Exists: 1
 --- !u!114 &-5693167493111852823
 MonoBehaviour:
@@ -175,7 +147,7 @@ MonoBehaviour:
     Data3: 628664748
     Data4: 1958852127
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -256,7 +228,7 @@ MonoBehaviour:
     Data3: 1313924520
     Data4: -169809860
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -283,41 +255,15 @@ MonoBehaviour:
     Data3: 863707551
     Data4: 1208276894
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5912800556398484936}
+  - {fileID: 2617535280247850557}
   MinDistance: 1
   MaxDistance: 20
   Length: 20111
---- !u!114 &-2442070907241336968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ellen_Footsteps 2/Material
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Material
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1334946688
-    data2: 2862125583
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Earth
-  - Stone
-  Exists: 1
 --- !u!114 &-2317302016200119463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,14 +283,14 @@ MonoBehaviour:
     Data3: -1838940015
     Data4: -1976209561
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 831
 --- !u!114 &-2088894468958118952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,7 +364,7 @@ MonoBehaviour:
     Data3: 64288920
     Data4: -1869602343
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -426,6 +372,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 781
+--- !u!114 &-662044786326953975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639307301527690966
+  FileSizes:
+  - Name: Desktop
+    Value: 3107168
+  Exists: 1
 --- !u!114 &-236286134149388083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,12 +411,12 @@ MonoBehaviour:
     Data3: -2091117395
     Data4: -1343831100
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -8496686097304596502}
+  - {fileID: 5257263915998330269}
   MinDistance: 1
   MaxDistance: 20
   Length: 708
@@ -467,8 +433,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: 4904620503502302509}
-  - {fileID: 6393016472587474342}
+  - {fileID: -5773049041144878198}
+  - {fileID: -662044786326953975}
   EditorEvents:
   - {fileID: -3950674653577376724}
   - {fileID: -3766528851672413382}
@@ -489,13 +455,14 @@ MonoBehaviour:
   - {fileID: -236286134149388083}
   - {fileID: 3044681850172265177}
   - {fileID: 1757929674847894633}
+  - {fileID: 6016712452693992136}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   StringsBanks:
-  - {fileID: 4904620503502302509}
+  - {fileID: -5773049041144878198}
   cacheVersion: 132096
-  cacheTime: 639306405938827428
+  cacheTime: 639307301527704288
   SerializableEventsDict:
   - key: event:/SFX/Ellen/Ellen_Ranged
     index: 0
@@ -535,6 +502,8 @@ MonoBehaviour:
     index: 17
   - key: event:/SFX/Enemies/Chomper/Footstep
     index: 18
+  - key: event:/Interactables/Bullet Impact
+    index: 19
 --- !u!114 &551932271255755479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +523,7 @@ MonoBehaviour:
     Data3: -1076051060
     Data4: 166713723
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -608,7 +577,7 @@ MonoBehaviour:
     Data3: 1036235185
     Data4: 306600936
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -636,6 +605,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1886
   Exists: 1
+--- !u!114 &2617535280247850557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Box_Falling/Velocity
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Velocity
+  StudioPath: 
+  Min: -50
+  Max: 0
+  Default: -50
+  ID:
+    data1: 4083803882
+    data2: 2851082181
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2646699579525946343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +649,56 @@ MonoBehaviour:
   - Name: Desktop
     Value: 17060
   Exists: 1
+--- !u!114 &2979173748093780779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ellen_Footsteps 2/Material
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Material
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1334946688
+    data2: 2862125583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Earth
+  - Stone
+  Exists: 1
+--- !u!114 &3034018083171346990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ellen_Falling/Velocity
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Velocity
+  StudioPath: 
+  Min: -50
+  Max: 0
+  Default: -50
+  ID:
+    data1: 4083803882
+    data2: 2851082181
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3044681850172265177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +718,7 @@ MonoBehaviour:
     Data3: -1408601167
     Data4: -1184271234
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -756,7 +799,7 @@ MonoBehaviour:
     Data3: -1383023225
     Data4: -1738819547
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -891,16 +934,16 @@ MonoBehaviour:
     Data3: 1620010673
     Data4: 1855080467
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7207417554933378494}
+  - {fileID: 3034018083171346990}
   MinDistance: 1
   MaxDistance: 20
   Length: 15000
---- !u!114 &4904620503502302509
+--- !u!114 &5257263915998330269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,16 +952,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639306405938827428
-  FileSizes:
-  - Name: Desktop
-    Value: 2030
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ellen_Land/Velocity
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Velocity
+  StudioPath: 
+  Min: -50
+  Max: 0
+  Default: -50
+  ID:
+    data1: 4083803882
+    data2: 2851082181
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &5447464553095426114
 MonoBehaviour:
@@ -939,7 +986,7 @@ MonoBehaviour:
     Data3: 1111587757
     Data4: -1743384393
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -974,6 +1021,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6016712452693992136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactables/Bullet Impact
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Interactables/Bullet Impact
+  Guid:
+    Data1: -972255953
+    Data2: 1115635947
+    Data3: -980700027
+    Data4: 552297277
+  Banks:
+  - {fileID: -662044786326953975}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7204319999578559521}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6226653186647866769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,26 +1076,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6393016472587474342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639306405938803318
-  FileSizes:
-  - Name: Desktop
-    Value: 2751360
-  Exists: 1
 --- !u!114 &6444815243725488070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,7 +1149,7 @@ MonoBehaviour:
     Data3: 862906022
     Data4: 2146937113
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1102,7 +1157,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 915
---- !u!114 &7207417554933378494
+--- !u!114 &7204319999578559521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1112,19 +1167,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ellen_Falling/Velocity
+  m_Name: parameter:/Bullet Impact/BulletCollide
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Velocity
+  Name: BulletCollide
   StudioPath: 
-  Min: -50
-  Max: 0
-  Default: -50
+  Min: 0
+  Max: 1
+  Default: 0
   ID:
-    data1: 4083803882
-    data2: 2851082181
-  Type: 0
+    data1: 403850574
+    data2: 2395136220
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Object
+  - Enemy
   Exists: 1
 --- !u!114 &7500674541349888845
 MonoBehaviour:
@@ -1145,7 +1202,7 @@ MonoBehaviour:
     Data3: 1829620650
     Data4: 2046434728
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1172,12 +1229,12 @@ MonoBehaviour:
     Data3: 993020034
     Data4: 1109856350
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2442070907241336968}
+  - {fileID: 2979173748093780779}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1200,7 +1257,7 @@ MonoBehaviour:
     Data3: 1464761789
     Data4: 706184916
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1254,14 +1311,14 @@ MonoBehaviour:
     Data3: -568868677
     Data4: 1490812935
   Banks:
-  - {fileID: 6393016472587474342}
+  - {fileID: -662044786326953975}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1625
 --- !u!114 &9210504849275602389
 MonoBehaviour:
   m_ObjectHideFlags: 0

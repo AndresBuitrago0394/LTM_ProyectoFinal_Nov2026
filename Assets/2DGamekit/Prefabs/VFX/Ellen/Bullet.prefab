@@ -249,8 +249,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114260494671466652}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnHitDamageable
+        m_TargetAssemblyTypeName: Gamekit2D.Bullet, Assembly-CSharp
+        m_MethodName: OnBulletHitDamageable
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -311,14 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f916c2dfd5f3b47bc8cf6ae8d8452e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileEvent: 
-  ProjectileEventReference:
-    Guid:
-      Data1: 1225159526
-      Data2: 1151181818
-      Data3: 862906022
-      Data4: 2146937113
-    Path: event:/Interactables/Bullet
+  ProjectileEvent: event:/Interactables/Bullet
+  ImpactEvent: event:/Interactables/Bullet Impact
   destroyWhenOutOfView: 0
   spriteOriginallyFacesLeft: 0
   timeBeforeAutodestruct: -1

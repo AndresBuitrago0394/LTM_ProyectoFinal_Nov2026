@@ -83,27 +83,29 @@ namespace Gamekit2D
             {
                 Falling.setParameterByName("Velocity", pc.m_MoveVector.y);
                 if (PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                {
+                    Falling = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Falling");
                     Falling.start();
+                    Falling.release();
+                }
             }
+            else if ((IsGrounded() || playerSubmerged) && PbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
 
-        void PlayerLanded()
+       void PlayerLanded()
         {
-            // FIX: Added 'pc != null' check to prevent NullReferenceException
-            if (pc != null && IsGrounded() && !wasGrounded && pc.m_MoveVector.y < 0)
+            if (IsGrounded() && !wasGrounded && pc.m_MoveVector.y < 0)
             {
                 FMOD.Studio.EventInstance Landing = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Land");
-                
-                Landing.setParameterByName("Velocity", pc.m_MoveVector.y);
-                Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y);
-                
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(Landing, transform, GetComponent<Rigidbody2D>());
+                //Landing.setParameterByName("Velocity", pc.m_MoveVector.y);   /*< ----Use this if you're using A version of FMOD before V2.00.00*/
+                Landing.setParameterByName("Velocity", pc.m_MoveVector.y, false);
+                //Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y);   /*< ----Use this if you're using A version of FMOD before V2.00.00*/
+                Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y, false);
                 Landing.start();
                 Landing.release();
-                
-                // FIX: Stop the falling sound when landing
                 Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                
-                Debug.Log(pc.m_MoveVector.y);
             }
         }
 

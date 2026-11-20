@@ -40,8 +40,8 @@ namespace Gamekit2D
             PE = FMODUnity.RuntimeManager.CreateInstance(ProjectileEvent);
             PE.getPlaybackState(out PbState);
             FMODUnity.RuntimeManager.AttachInstanceToGameObject(PE, transform, GetComponent<Rigidbody2D>());
-            PE.start(); // play bullet or spit sound when projectile is fired
-            PE.release(); // destroy the event instance once the event has been told to stop
+            PE.start(); 
+            PE.release(); 
         }
 
         public void ReturnToPool ()
@@ -58,9 +58,7 @@ namespace Gamekit2D
                                 screenPoint.x < 1 + k_OffScreenError && screenPoint.y > -k_OffScreenError &&
                                 screenPoint.y < 1 + k_OffScreenError;
 
-                
-                
-                if (!onScreen && PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING) // if the flying sound is still playing we don't want the bullet to disapear.
+                if (!onScreen && PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
                     bulletPoolObject.ReturnToPool();
             }
 
@@ -70,23 +68,52 @@ namespace Gamekit2D
                 if (m_Timer > timeBeforeAutodestruct)
                 {
                     bulletPoolObject.ReturnToPool();
-                    PE.stop(FMOD.Studio.STOP_MODE.IMMEDIATE); // for the spit projectile
+                    PE.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 }
             }
         }
 
-        public void OnSHitDamageable(Damager origin, Damageable damageable)
+        public void OnSpitHitDamageable(Damager origin, Damageable damageable)
         {
             FindSurface(origin.LastHit);
-            PE.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); // if a projectile hits an enemy, stop playing the projectile flying sound
-            FMODUnity.RuntimeManager.PlayOneShotAttached(ImpactEvent, damageable.gameObject); // plays the projectile impact sound
+            PE.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); 
+            
+            // Expanded to set the "Enemy" label for spit impacts
+            FMOD.Studio.EventInstance SpitImpact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(SpitImpact, damageable.transform, damageable.GetComponent<Rigidbody2D>());
+            SpitImpact.setParameterByNameWithLabel("BulletCollide", "Enemy");
+            SpitImpact.start();
+            SpitImpact.release();
+        }
+
+        public void OnBulletHitDamageable(Damager origin, Damageable damageable)
+        {
+            FindSurface(origin.LastHit);
+            PE.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); 
+            
+            FMOD.Studio.EventInstance BulletImpact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(BulletImpact, damageable.transform, damageable.GetComponent<Rigidbody2D>());
+            
+            // CHANGED: Use setParameterByNameWithLabel for the "Enemy" string
+            BulletImpact.setParameterByNameWithLabel("BulletCollide", "Enemy");
+            
+            BulletImpact.start();
+            BulletImpact.release();
         }
 
         public void OnHitNonDamageable(Damager origin)
         {
             FindSurface(origin.LastHit);
-            PE.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); // if a projectile hits any other gameobject, stop playing the projectile flying sound
-            FMODUnity.RuntimeManager.PlayOneShotAttached(ImpactEvent, gameObject);
+            PE.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); 
+            
+            // CHANGED: Expanded from a PlayOneShot call to an instance call so we can pass the "Object" string parameter
+            FMOD.Studio.EventInstance BulletImpact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(BulletImpact, transform, GetComponent<Rigidbody2D>());
+            
+            BulletImpact.setParameterByNameWithLabel("BulletCollide", "Object");
+            
+            BulletImpact.start();
+            BulletImpact.release();
         }
 
         protected void FindSurface(Collider2D collider)
