@@ -312,7 +312,12 @@ namespace Gamekit2D
             }
 
             if (Time.timeSinceLevelLoad > 0.5)
-                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Environment/Acid_Splash", collision.gameObject.transform.position);
+            {
+                if(collision.gameObject.name == "SpitProjectille(Clone)")
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Environment/Light_Acid_Splash", collision.gameObject.transform.position);
+                else
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Environment/Acid_Splash", collision.gameObject.transform.position);
+            }
 
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
             if (rb == null || rb.bodyType == RigidbodyType2D.Static)

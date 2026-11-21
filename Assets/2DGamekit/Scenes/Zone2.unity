@@ -6839,7 +6839,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.16797948
   m_PointLightOuterRadius: 2.5332656
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -30071,6 +30071,7 @@ GameObject:
   - component: {fileID: 1706047230}
   - component: {fileID: 1706047231}
   - component: {fileID: 1706047236}
+  - component: {fileID: 1706047237}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -30339,6 +30340,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1706047229}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnExit:
     m_PersistentCalls:
       m_Calls:
@@ -30367,6 +30380,26 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inventoryChecks: []
+--- !u!114 &1706047237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706047229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -897281697
+      Data2: 1104620987
+      Data3: -436844398
+      Data4: 971056887
+    Path: event:/Interactables/Key Pick-Up
+  PlayOnAwake: 0
 --- !u!1001 &1735260187
 PrefabInstance:
   m_ObjectHideFlags: 0

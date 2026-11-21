@@ -10,6 +10,8 @@ namespace Gamekit2D
         private FMOD.Studio.EventInstance PushSound;
         private FMOD.Studio.EventInstance FallSound;
         FMOD.Studio.PLAYBACK_STATE PbState;
+        private FMOD.Studio.EventInstance BobbleSound;
+        FMOD.Studio.PLAYBACK_STATE PbState2;
 
         static ContactPoint2D[] s_ContactPointBuffer = new ContactPoint2D[16];
         static Dictionary<Collider2D, Pushable> s_PushableCache = new Dictionary<Collider2D, Pushable> ();
@@ -30,18 +32,19 @@ namespace Gamekit2D
         protected bool m_Grounded;
         Collider2D[] m_WaterColliders;
 
+        private float y;
+
         void Awake ()
         {
-            // Kept the string event paths as requested
             PushSound = FMODUnity.RuntimeManager.CreateInstance("event:/Interactables/Pushable");
             FallSound = FMODUnity.RuntimeManager.CreateInstance("event:/Interactables/Box_Falling");
+            BobbleSound = FMODUnity.RuntimeManager.CreateInstance("event:/Interactables/Bobbling Create");
 
             m_SpriteRenderer = GetComponent<SpriteRenderer>(); 
             m_Rigidbody2D = GetComponent<Rigidbody2D> ();
 
             if (s_PushableCache.Count == 0)
             {
-                // Updated obsolete FindObjectsOfType to FindObjectsByType
                 Pushable[] pushables = FindObjectsByType<Pushable>(FindObjectsSortMode.None);
 
                 for (int i = 0; i < pushables.Length; i++)
@@ -55,7 +58,6 @@ namespace Gamekit2D
                 }
             }
 
-            // Updated obsolete FindObjectsOfType to FindObjectsByType
             WaterArea[] waterAreas = FindObjectsByType<WaterArea>(FindObjectsSortMode.None);
             m_WaterColliders = new Collider2D[waterAreas.Length];
             for (int i = 0; i < waterAreas.Length; i++)
@@ -67,10 +69,14 @@ namespace Gamekit2D
         void FixedUpdate ()
         {
             FallSound.getPlaybackState(out PbState);
-
+            
+            // FIX: Replaced 'transform' with 'gameObject' for modern API compliance
+            BobbleSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, GetComponent<Rigidbody2D>()));
+            
             Vector2 velocity = m_Rigidbody2D.linearVelocity;
             velocity.x = 0f;
             m_Rigidbody2D.linearVelocity = velocity;
+
             CheckGrounded();
 
             for (int i = 0; i < m_WaterColliders.Length; i++)
@@ -80,16 +86,26 @@ namespace Gamekit2D
                     m_Rigidbody2D.constraints |= RigidbodyConstraints2D.FreezePositionX;
                     if (PbState != FMOD.Studio.PLAYBACK_STATE.STOPPED)
                         FallSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+                    BobbleSound.getPlaybackState(out PbState2);
+                    if (PbState2 != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                        BobbleSound.start(); 
+
+                    y = velocity.y;
+                    if (y < 0)
+                        y *= -1;
+                    BobbleSound.setParameterByName("Bobble", y, false);
                 }
                 else
                 {
                     if (!m_Grounded && velocity.y < -3)
                     {
-                        // Updated obsolete setParameterValue to setParameterByName
                         FallSound.setParameterByName("Velocity", velocity.y);
                         if (PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
                         {
-                            FMODUnity.RuntimeManager.AttachInstanceToGameObject(FallSound, transform, GetComponent<Rigidbody2D>());
+                            // FIX: Replaced 'transform' with 'gameObject' and explicitly set 3D attributes before starting
+                            FMODUnity.RuntimeManager.AttachInstanceToGameObject(FallSound, gameObject, GetComponent<Rigidbody2D>());
+                            FallSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, GetComponent<Rigidbody2D>()));
                             FallSound.start();
                         }
                     }
@@ -101,6 +117,8 @@ namespace Gamekit2D
         {
             PushSound.release();
             FallSound.release();
+            BobbleSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            BobbleSound.release();
         }
 
         public void StartPushing()
@@ -110,7 +128,10 @@ namespace Gamekit2D
             pushableAudioSource.Play();
 
             Debug.Log("START");
-            FMODUnity.RuntimeManager.AttachInstanceToGameObject(PushSound, transform, GetComponent<Rigidbody2D>());
+            
+            // FIX: Replaced 'transform' with 'gameObject' and explicitly set 3D attributes before starting
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(PushSound, gameObject, GetComponent<Rigidbody2D>());
+            PushSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, GetComponent<Rigidbody2D>()));
             PushSound.start();
         }
 

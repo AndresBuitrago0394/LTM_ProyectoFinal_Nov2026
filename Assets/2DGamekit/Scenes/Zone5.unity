@@ -42056,6 +42056,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Path
+      value: event:/Interactables/Health Pick-Up
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data1
+      value: 729673897
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data2
+      value: 1194799489
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data3
+      value: -1601207620
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data4
+      value: -700384519
+      objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_Name
       value: HealthPickup (2)
@@ -45355,6 +45380,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Path
+      value: event:/Interactables/Health Pick-Up
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data1
+      value: 729673897
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data2
+      value: 1194799489
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data3
+      value: -1601207620
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data4
+      value: -700384519
+      objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_Name
       value: HealthPickup (1)
@@ -47227,6 +47277,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Path
+      value: event:/Interactables/Health Pick-Up
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data1
+      value: 729673897
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data2
+      value: 1194799489
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data3
+      value: -1601207620
+      objectReference: {fileID: 0}
+    - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
+        type: 3}
+      propertyPath: audioEvent.Guid.Data4
+      value: -700384519
+      objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_IsActive
       value: 1

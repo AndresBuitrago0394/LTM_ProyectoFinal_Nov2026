@@ -11,10 +11,11 @@ namespace Gamekit2D
         
         private FMOD.Studio.EventInstance Footsteps;
         private PlayerCharacter pc;
-        public FMOD.Studio.EventInstance Falling;
-        
+       public FMOD.Studio.EventInstance Falling;
+        FMOD.Studio.PLAYBACK_STATE PbState;
         [HideInInspector]
         public bool playerSubmerged = false;
+
 
         void Start()
         {
@@ -75,13 +76,16 @@ namespace Gamekit2D
 
         void PlayerFalling()
         {
-            FMOD.Studio.PLAYBACK_STATE PbState;
             Falling.getPlaybackState(out PbState);
             
             // FIX: Added 'pc != null' check to prevent NullReferenceException
-            if (pc != null && !IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
+            if (!IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
             {
-                Falling.setParameterByName("Velocity", pc.m_MoveVector.y);
+                Falling.getPlaybackState(out PbState);
+            if (!IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
+            {
+                // Falling.setParameterValue("Velocity", pc.m_MoveVector.y);   < ----Use this if you're using A version of FMOD before V2.00.00
+                Falling.setParameterByName("Velocity", pc.m_MoveVector.y, false);
                 if (PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
                 {
                     Falling = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Falling");
@@ -89,8 +93,10 @@ namespace Gamekit2D
                     Falling.release();
                 }
             }
-            else if ((IsGrounded() || playerSubmerged) && PbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            else if ((IsGrounded() || playerSubmerged) && PbState != FMOD.Studio.PLAYBACK_STATE.STOPPED)
                 Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+
         }
 
        void PlayerLanded()
@@ -105,7 +111,7 @@ namespace Gamekit2D
                 Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y, false);
                 Landing.start();
                 Landing.release();
-                Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                //Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
 
