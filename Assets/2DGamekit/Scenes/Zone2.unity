@@ -7319,8 +7319,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 249281651}
   m_SourcePrefab: {fileID: 100100000, guid: c57359a20b483084f9310f1d0b46f64a, type: 3}
+--- !u!1 &249281650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
+    type: 3}
+  m_PrefabInstance: {fileID: 249281649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249281651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249281650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -1143208596
+      Data2: 1219415811
+      Data3: -1503262053
+      Data4: -371167355
+    Path: event:/Interactables/Column Smash
+  PlayOnAwake: 0
 --- !u!1 &250219673
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,8 +14094,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 489276263}
   m_SourcePrefab: {fileID: 100100000, guid: c57359a20b483084f9310f1d0b46f64a, type: 3}
+--- !u!1 &489276262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
+    type: 3}
+  m_PrefabInstance: {fileID: 489276261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &489276263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489276262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -1143208596
+      Data2: 1219415811
+      Data3: -1503262053
+      Data4: -371167355
+    Path: event:/Interactables/Column Smash
+  PlayOnAwake: 0
 --- !u!1 &489474349
 GameObject:
   m_ObjectHideFlags: 0
@@ -30340,10 +30400,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1706047229}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1706047237}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

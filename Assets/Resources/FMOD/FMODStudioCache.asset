@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2976
 --- !u!114 &-8858314370541324754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7976636192504097312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactables/Platform Opening
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Interactables/Platform Opening
+  Guid:
+    Data1: -2113338048
+    Data2: 1213295134
+    Data3: 132512384
+    Data4: 815245234
+  Banks:
+  - {fileID: 6035712372274253431}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2375
 --- !u!114 &-7562485847018448127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +189,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6448159838570603119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactables/Moving Platform
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Interactables/Moving Platform
+  Guid:
+    Data1: 1001039320
+    Data2: 1271563448
+    Data3: 1584080518
+    Data4: -1352856849
+  Banks:
+  - {fileID: 6035712372274253431}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38500
 --- !u!114 &-6354757239840173104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,13 +579,16 @@ MonoBehaviour:
   - {fileID: -8878109850333947091}
   - {fileID: -6597806997539342134}
   - {fileID: 1370161031718634660}
+  - {fileID: 2706767884816422549}
+  - {fileID: -7976636192504097312}
+  - {fileID: -6448159838570603119}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6035712372274253431}
   StringsBanks:
   - {fileID: 679646133232076666}
   cacheVersion: 132096
-  cacheTime: 639308176441321907
+  cacheTime: 639308688410835049
   SerializableEventsDict:
   - key: event:/SFX/Ellen/Ellen_Ranged
     index: 0
@@ -571,6 +628,28 @@ MonoBehaviour:
     index: 17
   - key: event:/SFX/Ellen/Ellen_Falling
     index: 18
+  - key: event:/Interactables/Pressure Pad
+    index: 19
+  - key: event:/Interactables/Bullet Impact
+    index: 20
+  - key: event:/Interactables/Bobbling Create
+    index: 21
+  - key: event:/Interactables/Weapon Pick-Up
+    index: 22
+  - key: event:/Interactables/Key Pick-Up
+    index: 23
+  - key: event:/Interactables/Column Smash
+    index: 24
+  - key: event:/SFX/Environment/Light_Acid_Splash
+    index: 25
+  - key: event:/Interactables/Health Pick-Up
+    index: 26
+  - key: event:/Interactables/Door Opening
+    index: 27
+  - key: event:/Interactables/Platform Opening
+    index: 28
+  - key: event:/Interactables/Moving Platform
+    index: 29
 --- !u!114 &551932271255755479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,10 +692,10 @@ MonoBehaviour:
   Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639308176441321907
+  lastModified: 639308688410835049
   FileSizes:
   - Name: Desktop
-    Value: 2516
+    Value: 2650
   Exists: 1
 --- !u!114 &1114349693634045904
 MonoBehaviour:
@@ -672,7 +751,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2038
 --- !u!114 &1670699052925001209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +858,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1913
 --- !u!114 &2046300287678018379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,6 +923,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 17060
   Exists: 1
+--- !u!114 &2706767884816422549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactables/Door Opening
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Interactables/Door Opening
+  Guid:
+    Data1: -2100376287
+    Data2: 1249410471
+    Data3: 1773091736
+    Data4: 1370955590
+  Banks:
+  - {fileID: 6035712372274253431}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &3044681850172265177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,10 +1289,10 @@ MonoBehaviour:
   Path: ../../TEST_Proyecto Final LTM 2026/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639308176441281153
+  lastModified: 639308688410821737
   FileSizes:
   - Name: Desktop
-    Value: 3022848
+    Value: 6528096
   Exists: 1
 --- !u!114 &6226653186647866769
 MonoBehaviour:
@@ -1241,7 +1347,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1500
 --- !u!114 &6444815243725488070
 MonoBehaviour:
   m_ObjectHideFlags: 0
