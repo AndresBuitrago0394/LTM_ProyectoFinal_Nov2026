@@ -15,6 +15,8 @@ namespace Gamekit2D
     [RequireComponent(typeof(BoxCollider2D))]
     public class WaterArea : MonoBehaviour
     {
+
+
         protected struct WaterColumn
         {
             public float currentHeight;
@@ -91,17 +93,8 @@ namespace Gamekit2D
             RecomputeMesh();
             SetSortingLayer();
 
-#if UNITY_EDITOR
-            if (Application.isPlaying)
-            {
-                //we don't want to do it in editor when not playing as it would leak object
-#endif
-                m_Bubbles.Play();
-                m_Steam.Play();
-#if UNITY_EDITOR
-            }
-#endif
-                
+            m_Bubbles.Play();
+            m_Steam.Play();
 
             meshVertices = m_Mesh.vertices;
         }
@@ -169,16 +162,8 @@ namespace Gamekit2D
             bubblesLocalPosition = offset + Vector2.down * size.y * 0.5f;
             m_Bubbles.transform.localPosition = bubblesLocalPosition;
 
-#if UNITY_EDITOR
-            if (Application.isPlaying)
-            {
-                //we don't want to do it in editor when not playing as it would leak object
-#endif
-                m_Steam.Simulate(0.1f);
-                m_Bubbles.Simulate(0.1f);
-#if UNITY_EDITOR
-            }
-#endif
+            m_Steam.Simulate(0.1f);
+            m_Bubbles.Simulate(0.1f);
 
             m_Damager.size = size;
             m_Damager.offset = offset;
@@ -288,6 +273,7 @@ namespace Gamekit2D
             m_SplashSourcePool[use].gameObject.SetActive(false);
             m_SplashSourcePool[use].gameObject.SetActive(true);
             m_SplashSourcePool[use].PlayRandomSound();
+            
         }
 
         FMOD.Studio.EventInstance SS;
@@ -296,16 +282,15 @@ namespace Gamekit2D
         {
             if (collision.gameObject.name == "Ellen")
             {
-                FmodPlayer FP = collision.GetComponent<FmodPlayer>();
-                FP.playerSubmerged = true;
+                
+                FmodPlayer.playerSubmerged = true;
                 FMOD.Studio.PLAYBACK_STATE PbState;
-                FP.Falling.getPlaybackState(out PbState);
+                FmodPlayer.Falling.getPlaybackState(out PbState);
                 if (PbState != FMOD.Studio.PLAYBACK_STATE.STOPPED)
                 {
-                    FP.Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    FmodPlayer.Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                     Debug.Log("stop falling sound");
                 }
-
                 SS = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Underwater");
                 SS.start();
                 SS.release();
@@ -363,17 +348,16 @@ namespace Gamekit2D
             }
         }
 
-            private void OnTriggerExit2D(Collider2D col)
+        private void OnTriggerExit2D(Collider2D col)
         {
             if (col.gameObject.name == "Ellen")
             {
-                FmodPlayer FP = col.GetComponent<FmodPlayer>();
-                FP.playerSubmerged = false;
+                
+                FmodPlayer.playerSubmerged = false;
                 Debug.Log("exit water");
                 SS.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
-
     }
 
 #if UNITY_EDITOR

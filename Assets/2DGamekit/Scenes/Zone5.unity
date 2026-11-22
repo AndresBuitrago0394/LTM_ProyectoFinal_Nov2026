@@ -606,9 +606,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 52659b3c95dc6427c9feef7fd4624f81, type: 3}
-  - {fileID: 8300000, guid: c28334551fdb04394a0210c6a32071cb, type: 3}
-  - {fileID: 8300000, guid: 89e5072b5af9b41eea002b41cf20c535, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.3
@@ -1795,6 +1795,7 @@ GameObject:
   - component: {fileID: 200126959}
   - component: {fileID: 200126960}
   - component: {fileID: 200126961}
+  - component: {fileID: 200126962}
   m_Layer: 0
   m_Name: CutsceneTrigger
   m_TagString: Untagged
@@ -1908,6 +1909,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 200126962}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnDirectorFinish:
     m_PersistentCalls:
       m_Calls:
@@ -1935,9 +1948,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2026288440}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dataSettings:
     dataTag: 
     persistenceType: 0
+--- !u!114 &200126962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200126958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -1702284566
+      Data2: 1277208428
+      Data3: 1024373432
+      Data4: -991630652
+    Path: event:/SFX/Enemies/Gunner/Intro Cutscene
+  PlayOnAwake: 0
 --- !u!1 &215958517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,7 +2855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 730ed1450fec4f84ebf9f40f5b135fcd, type: 3}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.2
@@ -2827,7 +2872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 5efaa944cc7cece4996b86725256962b, type: 3}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.3
@@ -22231,13 +22276,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641617096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6abcd50fdc97f3e409820b29f208d704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: e2dfd7d14d2c3a048b04b6bbc87c8cbb, type: 3}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.2
@@ -22343,6 +22388,7 @@ GameObject:
   - component: {fileID: 655459436}
   - component: {fileID: 655459438}
   - component: {fileID: 655459437}
+  - component: {fileID: 655459439}
   m_Layer: 18
   m_Name: DamageZone
   m_TagString: Untagged
@@ -22472,6 +22518,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 655459439}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnDie:
     m_PersistentCalls:
       m_Calls: []
@@ -22481,6 +22539,26 @@ MonoBehaviour:
   dataSettings:
     dataTag: 
     persistenceType: 0
+--- !u!114 &655459439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655459435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: 847672455
+      Data2: 1285472286
+      Data3: -120677472
+      Data4: -592711933
+    Path: event:/SFX/Enemies/Gunner/Take Damage
+  PlayOnAwake: 0
 --- !u!1001 &659677726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42662,10 +42740,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: f88a98c1eaf3d904d86d1e8f85e249ce, type: 3}
-  - {fileID: 8300000, guid: 1405fff70e6be504f82af6f73e33ad24, type: 3}
-  - {fileID: 8300000, guid: a9441c7b87d565e4ab53bf175f580072, type: 3}
-  - {fileID: 8300000, guid: b5821ccd1ba51204589ff413501f15ff, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.3
@@ -43702,7 +43780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: f6609dc4c074f1e47b5a0fa78aee3bea, type: 3}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 0
   pitchRange: 0.2
@@ -45277,7 +45355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: d6c663904e1c2b64ca9014c32c3775cf, type: 3}
+  - {fileID: 0}
   overrides: []
   randomizePitch: 1
   pitchRange: 0.2
@@ -47870,10 +47948,25 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.004655819
       objectReference: {fileID: 0}
+    - target: {fileID: 70340845508230026, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114460243114916098, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,
         type: 3}
       propertyPath: hittableLayers.m_Bits
       value: 328192
+      objectReference: {fileID: 0}
+    - target: {fileID: 114734347468151670, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,
+        type: 3}
+      propertyPath: MeleeAttack.m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114734347468151670, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,
+        type: 3}
+      propertyPath: RangedAttack.m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114774311958850474, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,
         type: 3}
@@ -53590,6 +53683,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026288438}
+  - component: {fileID: 2026288439}
+  - component: {fileID: 2026288440}
   m_Layer: 0
   m_Name: ----- System -----
   m_TagString: Untagged
@@ -53612,6 +53707,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2026288439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026288437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1033845436
+      Data2: 1249231355
+      Data3: 1722163592
+      Data4: -939342584
+    Path: event:/SFX/Environment/Ambience_Zone5
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2026288440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026288437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -386307115
+      Data2: 1281549884
+      Data3: 272706239
+      Data4: 2059294340
+    Path: event:/Music/Boss Fight Music
+  Event: 
+  EventPlayTrigger: 6
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2050972294
 PrefabInstance:
   m_ObjectHideFlags: 0

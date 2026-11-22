@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Gamekit2D
@@ -12,6 +11,11 @@ namespace Gamekit2D
         public float explosionTimer = 3;
 
         Rigidbody2D Rigidbody;
+        
+        // FMOD Events
+        [Header("FMOD Events")]
+        public FMODUnity.EventReference throwEvent;
+        public FMODUnity.EventReference explodeEvent;
 
         void OnEnable()
         {
@@ -20,8 +24,21 @@ namespace Gamekit2D
 
         IEnumerator Start()
         {
+            // 1. Play the "enter" or throw sound
+            if (!throwEvent.IsNull)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(throwEvent, transform.position);
+            }
+
             Rigidbody.AddForce(initialForce);
             yield return new WaitForSeconds(timer);
+            
+            // 2. Play the explosion sound right as the timer finishes
+            if (!explodeEvent.IsNull)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(explodeEvent, transform.position);
+            }
+
             var eGo = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(eGo, explosionTimer);
             Destroy(gameObject);

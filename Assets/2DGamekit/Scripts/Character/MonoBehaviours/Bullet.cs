@@ -95,7 +95,7 @@ namespace Gamekit2D
             FMODUnity.RuntimeManager.AttachInstanceToGameObject(BulletImpact, damageable.transform, damageable.GetComponent<Rigidbody2D>());
             
             // CHANGED: Use setParameterByNameWithLabel for the "Enemy" string
-            BulletImpact.setParameterByNameWithLabel("BulletCollide", "Enemy");
+            BulletImpact.setParameterByNameWithLabel("BulletCollide", damageable.name == "GunnerShield" ? "Shield" : "Object");
             
             BulletImpact.start();
             BulletImpact.release();

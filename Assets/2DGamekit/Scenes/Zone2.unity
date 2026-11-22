@@ -7316,10 +7316,49 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 249281651}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: TriggerAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 249281653}
     - targetCorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
         type: 3}
       insertIndex: -1
@@ -7338,6 +7377,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249281650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -1143208596
+      Data2: 1219415811
+      Data3: -1503262053
+      Data4: -371167355
+    Path: event:/Interactables/Column Smash
+  PlayOnAwake: 0
+--- !u!1 &249281652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
+    type: 3}
+  m_PrefabInstance: {fileID: 249281649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249281653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249281652}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
@@ -8670,6 +8735,7 @@ GameObject:
   - component: {fileID: 378712719}
   - component: {fileID: 378712721}
   - component: {fileID: 378712720}
+  - component: {fileID: 378712722}
   m_Layer: 31
   m_Name: BackgroundTiles
   m_TagString: 'Material: Stone'
@@ -13192,6 +13258,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &378712722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378712718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -454534368
+      Data2: 1278841678
+      Data3: 333727405
+      Data4: 2066352379
+    Path: event:/Interactables/Pressure Pad
+  PlayOnAwake: 0
 --- !u!1 &379955330
 GameObject:
   m_ObjectHideFlags: 0
@@ -14091,10 +14177,49 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 489276263}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: TriggerAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314540861543452, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 489276265}
     - targetCorrespondingSourceObject: {fileID: 1788307402889794, guid: c57359a20b483084f9310f1d0b46f64a,
         type: 3}
       insertIndex: -1
@@ -14113,6 +14238,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489276262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
+  audioEvent:
+    Guid:
+      Data1: -1143208596
+      Data2: 1219415811
+      Data3: -1503262053
+      Data4: -371167355
+    Path: event:/Interactables/Column Smash
+  PlayOnAwake: 0
+--- !u!1 &489276264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
+    type: 3}
+  m_PrefabInstance: {fileID: 489276261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &489276265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489276264}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e32c84d3fc7164874ae1f342944412de, type: 3}
@@ -20969,6 +21120,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918234952}
+  - component: {fileID: 918234953}
+  - component: {fileID: 918234954}
   m_Layer: 0
   m_Name: ----- System -----
   m_TagString: Untagged
@@ -20991,6 +21144,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918234953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918234951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1226362332
+      Data2: 1126602573
+      Data3: -1884059722
+      Data4: -934657645
+    Path: event:/SFX/Environment/Ambience_Zone2
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &918234954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918234951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1946410581
+      Data2: 1189980183
+      Data3: 1423863680
+      Data4: -1728599557
+    Path: event:/Music/Lv2 Music
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &928568925
 GameObject:
   m_ObjectHideFlags: 0
@@ -24072,6 +24287,11 @@ PrefabInstance:
     - target: {fileID: 4607298957376116, guid: 5a4dedcc0d105f34da4eed8c2a3f3f67, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82797150486328068, guid: 5a4dedcc0d105f34da4eed8c2a3f3f67,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 82797150486328068, guid: 5a4dedcc0d105f34da4eed8c2a3f3f67,
         type: 3}
@@ -38572,6 +38792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113747430}
   - component: {fileID: 2113747431}
+  - component: {fileID: 2113747432}
   m_Layer: 31
   m_Name: KeyCollectedAudio
   m_TagString: Untagged
@@ -38601,7 +38822,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113747429}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243686457154912612, guid: 74cb2eead3628fa47a369c51a45d99a1,
     type: 2}
@@ -38692,6 +38913,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2113747432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113747429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1780530449
+      Data2: 1326373378
+      Data3: -865635678
+      Data4: -1099378045
+    Path: event:/Interactables/Door Light
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2113781250
 GameObject:
   m_ObjectHideFlags: 0

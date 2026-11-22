@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace Gamekit2D
@@ -5,28 +8,27 @@ namespace Gamekit2D
     public class FmodPlayer : MonoBehaviour
     {
         private float distance = 0.05f;
-        private string Material = "Earth";
+        
+        // Changed to string to support the "Earth" and "Stone" labels
+        private string Material;
+        
         private bool wasGrounded = true;
         private LayerMask LM = 1 << 31;
         
         private FMOD.Studio.EventInstance Footsteps;
+        
         private PlayerCharacter pc;
-       public FMOD.Studio.EventInstance Falling;
+
+        public static FMOD.Studio.EventInstance Falling;
         FMOD.Studio.PLAYBACK_STATE PbState;
         [HideInInspector]
-        public bool playerSubmerged = false;
-
+        public static bool playerSubmerged = false;
 
         void Start()
         {
             Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Footsteps 2");
-            Falling = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Falling");
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody2D>());
             pc = GetComponent<PlayerCharacter>();
-        }
-
-        void PlaySound(string path)
-        {
-            FMODUnity.RuntimeManager.PlayOneShot(path, transform.position);
         }
 
         void PlayMeleeEvent(string path)
@@ -41,8 +43,7 @@ namespace Gamekit2D
 
             PlayerLanded();
             wasGrounded = IsGrounded();
-
-            Footsteps.setParameterByNameWithLabel("Material", Material);
+            IsGrounded();
 
             PlayerFalling();
         }
@@ -54,17 +55,20 @@ namespace Gamekit2D
 
             if (hit.collider)
             {
+                // Updated to string labels
                 if (hit.collider.tag == "Material: Earth")
                     Material = "Earth";
                 else if (hit.collider.tag == "Material: Stone")
                     Material = "Stone";
                 else
-                    Material = "Earth";
+                    Material = "Earth";  
             }
         }
 
         void PlayFootstepsEvent()
         {
+            // Updated to setParameterByNameWithLabel for strings
+            Footsteps.setParameterByNameWithLabel("Material", Material);
             Footsteps.start();
         }
 
@@ -73,19 +77,13 @@ namespace Gamekit2D
             Footsteps.release();
             Falling.release();
         }
-
+        
         void PlayerFalling()
         {
             Falling.getPlaybackState(out PbState);
-            
-            // FIX: Added 'pc != null' check to prevent NullReferenceException
             if (!IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
             {
-                Falling.getPlaybackState(out PbState);
-            if (!IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
-            {
-                // Falling.setParameterValue("Velocity", pc.m_MoveVector.y);   < ----Use this if you're using A version of FMOD before V2.00.00
-                Falling.setParameterByName("Velocity", pc.m_MoveVector.y, false);
+                Falling.setParameterByName("Velocity", pc.m_MoveVector.y);
                 if (PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
                 {
                     Falling = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Falling");
@@ -93,25 +91,21 @@ namespace Gamekit2D
                     Falling.release();
                 }
             }
-            else if ((IsGrounded() || playerSubmerged) && PbState != FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            else if ((IsGrounded() || playerSubmerged) && PbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
                 Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            }
-
         }
 
-       void PlayerLanded()
+        void PlayerLanded()
         {
             if (IsGrounded() && !wasGrounded && pc.m_MoveVector.y < 0)
             {
                 FMOD.Studio.EventInstance Landing = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Land");
                 FMODUnity.RuntimeManager.AttachInstanceToGameObject(Landing, transform, GetComponent<Rigidbody2D>());
-                //Landing.setParameterByName("Velocity", pc.m_MoveVector.y);   /*< ----Use this if you're using A version of FMOD before V2.00.00*/
-                Landing.setParameterByName("Velocity", pc.m_MoveVector.y, false);
-                //Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y);   /*< ----Use this if you're using A version of FMOD before V2.00.00*/
-                Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y, false);
+                Landing.setParameterByName("Velocity", pc.m_MoveVector.y);
+                Footsteps.setParameterByName("FootstepDuck", pc.m_MoveVector.y);
                 Landing.start();
                 Landing.release();
-                //Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                Falling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
 
