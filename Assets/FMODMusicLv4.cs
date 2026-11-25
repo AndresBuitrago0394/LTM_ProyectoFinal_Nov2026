@@ -17,7 +17,7 @@ public class FMODMusicLv4 : MonoBehaviour
         Music.start();
         Music.release();
 
-        GoalLocation = Goal.transform.position;
+        //GoalLocation = Goal.transform.position;
     }
 
     public void Progress (float ProgressLevel)
