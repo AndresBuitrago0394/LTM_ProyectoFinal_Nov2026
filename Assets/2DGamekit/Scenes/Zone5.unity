@@ -1983,6 +1983,7 @@ MonoBehaviour:
       Data4: -991630652
     Path: event:/SFX/Enemies/Gunner/Intro Cutscene
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &215958517
 GameObject:
   m_ObjectHideFlags: 0
@@ -22559,6 +22560,7 @@ MonoBehaviour:
       Data4: -592711933
     Path: event:/SFX/Enemies/Gunner/Take Damage
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1001 &659677726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44932,10 +44934,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094086840}
-  - component: {fileID: 1094086842}
   - component: {fileID: 1094086845}
-  - component: {fileID: 1094086844}
   - component: {fileID: 1094086843}
+  - component: {fileID: 1094086842}
+  - component: {fileID: 1094086844}
   m_Layer: 14
   m_Name: CMCutsceneCamera
   m_TagString: Untagged
