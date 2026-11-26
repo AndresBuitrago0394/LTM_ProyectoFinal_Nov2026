@@ -609,8 +609,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../TEST_Proyecto Final LTM 2026/Proyecto Final LTM 2026.fspro
-  sourceBankPath: ../../TEST_Proyecto Final LTM 2026/Build
+  sourceProjectPath: ../../SesionFMOD_ProyectoFinalLTM_Nov_2026/FMOD/Proyecto Final
+    LTM 2026.fspro
+  sourceBankPath: ../../SesionFMOD_ProyectoFinalLTM_Nov_2026/FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -621,7 +622,7 @@ MonoBehaviour:
   ImportType: 0
   TargetAssetPath: FMODBanks
   TargetBankFolder: 
-  EventLinkage: 1
+  EventLinkage: 0
   SerializeGUIDsOnly: 0
   LoggingLevel: 2
   SpeakerModeSettings: []

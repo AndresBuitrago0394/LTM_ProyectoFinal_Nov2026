@@ -5199,12 +5199,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -897281697
-      Data2: 1104620987
-      Data3: -436844398
-      Data4: 971056887
+      Data1: 194364877
+      Data2: 1275082931
+      Data3: 908669630
+      Data4: -442689164
     Path: event:/Interactables/Key Pick-Up
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1853372986189988
 GameObject:
   m_ObjectHideFlags: 0

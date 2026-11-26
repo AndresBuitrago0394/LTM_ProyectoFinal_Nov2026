@@ -140,10 +140,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1463421455
-      Data2: 1316062258
-      Data3: -45090652
-      Data4: 937258552
+      Data1: 120597870
+      Data2: 1085916066
+      Data3: -77238135
+      Data4: -1765165396
     Path: event:/SFX/UI/Menu Button Confirm
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -167,10 +167,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1463421455
-      Data2: 1316062258
-      Data3: -45090652
-      Data4: 937258552
+      Data1: 120597870
+      Data2: 1085916066
+      Data3: -77238135
+      Data4: -1765165396
     Path: event:/SFX/UI/Menu Button Confirm
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: 1345378230
-      Data2: 1305059010
-      Data3: 1016847232
-      Data4: 1390900053
+      Data1: -1678305050
+      Data2: 1209156473
+      Data3: 871671174
+      Data4: 1343671513
     Path: event:/SFX/UI/Menu Button 02
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1327,10 +1327,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1720097317
-      Data2: 1261641832
-      Data3: 1914986372
-      Data4: -1359208616
+      Data1: -1852462628
+      Data2: 1215828556
+      Data3: -1276247920
+      Data4: 207290856
     Path: event:/SFX/UI/Menu Button Start
   PlayOnAwake: 1
   PlayOnDestroy: 0
@@ -1354,10 +1354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1167677961
-      Data2: 1115614910
-      Data3: -171157868
-      Data4: -1430219304
+      Data1: 361840924
+      Data2: 1146429926
+      Data3: -701444465
+      Data4: 1372520251
     Path: event:/SFX/UI/Menu Button Back
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1381,10 +1381,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1167677961
-      Data2: 1115614910
-      Data3: -171157868
-      Data4: -1430219304
+      Data1: 361840924
+      Data2: 1146429926
+      Data3: -701444465
+      Data4: 1372520251
     Path: event:/SFX/UI/Menu Button Back
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1402,10 +1402,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1167677961
-      Data2: 1115614910
-      Data3: -171157868
-      Data4: -1430219304
+      Data1: 361840924
+      Data2: 1146429926
+      Data3: -701444465
+      Data4: 1372520251
     Path: event:/SFX/UI/Menu Button Back
   PlayOnAwake: 0
   PlayOnDestroy: 1
@@ -1429,10 +1429,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: 1345378230
-      Data2: 1305059010
-      Data3: 1016847232
-      Data4: 1390900053
+      Data1: -1678305050
+      Data2: 1209156473
+      Data3: 871671174
+      Data4: 1343671513
     Path: event:/SFX/UI/Menu Button 02
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1456,10 +1456,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -543080167
-      Data2: 1102709195
-      Data3: -440133990
-      Data4: 2026852222
+      Data1: 1096486478
+      Data2: 1155872267
+      Data3: 277717177
+      Data4: -733415443
     Path: event:/SFX/UI/Menu Button 01
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1483,10 +1483,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1463421455
-      Data2: 1316062258
-      Data3: -45090652
-      Data4: 937258552
+      Data1: 120597870
+      Data2: 1085916066
+      Data3: -77238135
+      Data4: -1765165396
     Path: event:/SFX/UI/Menu Button Confirm
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1622,10 +1622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1167677961
-      Data2: 1115614910
-      Data3: -171157868
-      Data4: -1430219304
+      Data1: 361840924
+      Data2: 1146429926
+      Data3: -701444465
+      Data4: 1372520251
     Path: event:/SFX/UI/Menu Button Back
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1761,10 +1761,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1167677961
-      Data2: 1115614910
-      Data3: -171157868
-      Data4: -1430219304
+      Data1: 361840924
+      Data2: 1146429926
+      Data3: -701444465
+      Data4: 1372520251
     Path: event:/SFX/UI/Menu Button Back
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1788,10 +1788,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -543080167
-      Data2: 1102709195
-      Data3: -440133990
-      Data4: 2026852222
+      Data1: 1096486478
+      Data2: 1155872267
+      Data3: 277717177
+      Data4: -733415443
     Path: event:/SFX/UI/Menu Button 01
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -1927,10 +1927,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: 1345378230
-      Data2: 1305059010
-      Data3: 1016847232
-      Data4: 1390900053
+      Data1: -1678305050
+      Data2: 1209156473
+      Data3: 871671174
+      Data4: 1343671513
     Path: event:/SFX/UI/Menu Button 02
   PlayOnAwake: 0
   PlayOnDestroy: 0

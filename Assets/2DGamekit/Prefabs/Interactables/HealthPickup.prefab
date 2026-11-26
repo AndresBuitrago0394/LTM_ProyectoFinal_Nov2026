@@ -34482,9 +34482,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: 729673897
-      Data2: 1194799489
-      Data3: -1601207620
-      Data4: -700384519
+      Data1: -378770421
+      Data2: 1098642994
+      Data3: 890591104
+      Data4: -1794303180
     Path: event:/Interactables/Health Pick-Up
   PlayOnAwake: 0
+  PlayOnDestroy: 0

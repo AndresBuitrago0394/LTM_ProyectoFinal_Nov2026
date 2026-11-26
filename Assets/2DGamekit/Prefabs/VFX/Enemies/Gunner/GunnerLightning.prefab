@@ -418,10 +418,10 @@ MonoBehaviour:
   randomOffset: 0.5
   lightningAudioEvent:
     Guid:
-      Data1: -2020306873
-      Data2: 1286875304
-      Data3: -537974900
-      Data4: -1670618642
+      Data1: -1788104295
+      Data2: 1280562400
+      Data3: 257637251
+      Data4: 342273677
     Path: event:/SFX/Enemies/Gunner/Electric Attack
 --- !u!1 &1466858919692398
 GameObject:

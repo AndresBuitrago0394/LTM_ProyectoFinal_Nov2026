@@ -32024,10 +32024,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -554670319
-      Data2: 1129406012
-      Data3: 2011886237
-      Data4: 219718866
+      Data1: 1986014407
+      Data2: 1190750778
+      Data3: 1555119749
+      Data4: -1200304830
     Path: event:/SFX/Environment/Ambience_Zone1
   Event: 
   EventPlayTrigger: 1
@@ -32055,10 +32055,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -871232997
-      Data2: 1231612247
-      Data3: -772509265
-      Data4: 1023662870
+      Data1: 1344170532
+      Data2: 1199249103
+      Data3: 696343439
+      Data4: 466776808
     Path: event:/Music/Lv1 Music
   Event: 
   EventPlayTrigger: 1

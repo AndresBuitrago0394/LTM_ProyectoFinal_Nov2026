@@ -177,17 +177,17 @@ MonoBehaviour:
   explosionTimer: 0.5
   throwEvent:
     Guid:
-      Data1: 1379956311
-      Data2: 1301219823
-      Data3: 1560194490
-      Data4: -681343621
+      Data1: 244611067
+      Data2: 1230423693
+      Data3: -1000001653
+      Data4: -261805196
     Path: event:/SFX/Enemies/Gunner/Grenade Throw
   explodeEvent:
     Guid:
-      Data1: -932853555
-      Data2: 1309153003
-      Data3: 588712086
-      Data4: 795848701
+      Data1: -44189717
+      Data2: 1136400179
+      Data3: 257933736
+      Data4: 243630562
     Path: event:/SFX/Enemies/Gunner/Grenade Explosion
 --- !u!1 &1276231385368262
 GameObject:

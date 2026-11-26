@@ -1977,10 +1977,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1702284566
-      Data2: 1277208428
-      Data3: 1024373432
-      Data4: -991630652
+      Data1: 824009494
+      Data2: 1109277244
+      Data3: 916812479
+      Data4: 1322490126
     Path: event:/SFX/Enemies/Gunner/Intro Cutscene
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -22554,10 +22554,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: 847672455
-      Data2: 1285472286
-      Data3: -120677472
-      Data4: -592711933
+      Data1: 750547407
+      Data2: 1235610760
+      Data3: 1392299186
+      Data4: -1773329412
     Path: event:/SFX/Enemies/Gunner/Take Damage
   PlayOnAwake: 0
   PlayOnDestroy: 0
@@ -42144,22 +42144,22 @@ PrefabInstance:
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data1
-      value: 729673897
+      value: -378770421
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data2
-      value: 1194799489
+      value: 1098642994
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data3
-      value: -1601207620
+      value: 890591104
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data4
-      value: -700384519
+      value: -1794303180
       objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_Name
@@ -45468,22 +45468,22 @@ PrefabInstance:
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data1
-      value: 729673897
+      value: -378770421
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data2
-      value: 1194799489
+      value: 1098642994
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data3
-      value: -1601207620
+      value: 890591104
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data4
-      value: -700384519
+      value: -1794303180
       objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_Name
@@ -47365,22 +47365,22 @@ PrefabInstance:
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data1
-      value: 729673897
+      value: -378770421
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data2
-      value: 1194799489
+      value: 1098642994
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data3
-      value: -1601207620
+      value: 890591104
       objectReference: {fileID: 0}
     - target: {fileID: -1254791992550484110, guid: 6ce14eb040a43734b9fb27d9a62d91ee,
         type: 3}
       propertyPath: audioEvent.Guid.Data4
-      value: -700384519
+      value: -1794303180
       objectReference: {fileID: 0}
     - target: {fileID: 1032773586993216, guid: 6ce14eb040a43734b9fb27d9a62d91ee, type: 3}
       propertyPath: m_IsActive
@@ -53724,10 +53724,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1033845436
-      Data2: 1249231355
-      Data3: 1722163592
-      Data4: -939342584
+      Data1: 265347330
+      Data2: 1170462715
+      Data3: -1311191640
+      Data4: -1102715283
     Path: event:/SFX/Environment/Ambience_Zone5
   Event: 
   EventPlayTrigger: 1
@@ -53755,10 +53755,10 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: -386307115
-      Data2: 1281549884
-      Data3: 272706239
-      Data4: 2059294340
+      Data1: 2124548081
+      Data2: 1239911045
+      Data3: 1039753646
+      Data4: 656739813
     Path: event:/Music/Boss Fight Music
   Event: 
   EventPlayTrigger: 6

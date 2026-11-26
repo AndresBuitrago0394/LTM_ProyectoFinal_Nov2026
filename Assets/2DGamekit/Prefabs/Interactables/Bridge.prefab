@@ -306,9 +306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -2113338048
-      Data2: 1213295134
-      Data3: 132512384
-      Data4: 815245234
+      Data1: 516795350
+      Data2: 1181679669
+      Data3: -428962409
+      Data4: 1155596832
     Path: event:/Interactables/Platform Opening
   PlayOnAwake: 0
+  PlayOnDestroy: 0

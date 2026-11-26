@@ -20740,12 +20740,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1143208596
-      Data2: 1219415811
-      Data3: -1503262053
-      Data4: -371167355
+      Data1: 1602980217
+      Data2: 1332189372
+      Data3: -136315512
+      Data4: -1431614884
     Path: event:/Interactables/Column Smash
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1621264186267032
 GameObject:
   m_ObjectHideFlags: 0

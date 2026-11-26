@@ -384,12 +384,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -454534368
-      Data2: 1278841678
-      Data3: 333727405
-      Data4: 2066352379
+      Data1: -1797672173
+      Data2: 1211039431
+      Data3: -983068502
+      Data4: 815421145
     Path: event:/Interactables/Pressure Pad
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1910303879804660
 GameObject:
   m_ObjectHideFlags: 0

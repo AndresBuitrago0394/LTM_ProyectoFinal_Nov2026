@@ -10,7 +10,7 @@ namespace Gamekit2D
         private float distance = 0.05f;
         
         // Changed to string to support the "Earth" and "Stone" labels
-        private string Material;
+        private string Material = "Earth";
         
         private bool wasGrounded = true;
         private LayerMask LM = 1 << 31;
@@ -26,9 +26,12 @@ namespace Gamekit2D
 
         void Start()
         {
+            pc = GetComponent<PlayerCharacter>();
+            if (pc == null)
+                pc = GetComponentInParent<PlayerCharacter>();
+
             Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Footsteps 2");
             FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody2D>());
-            pc = GetComponent<PlayerCharacter>();
         }
 
         void PlayMeleeEvent(string path)
@@ -43,7 +46,6 @@ namespace Gamekit2D
 
             PlayerLanded();
             wasGrounded = IsGrounded();
-            IsGrounded();
 
             PlayerFalling();
         }
@@ -55,7 +57,6 @@ namespace Gamekit2D
 
             if (hit.collider)
             {
-                // Updated to string labels
                 if (hit.collider.tag == "Material: Earth")
                     Material = "Earth";
                 else if (hit.collider.tag == "Material: Stone")
@@ -67,7 +68,6 @@ namespace Gamekit2D
 
         void PlayFootstepsEvent()
         {
-            // Updated to setParameterByNameWithLabel for strings
             Footsteps.setParameterByNameWithLabel("Material", Material);
             Footsteps.start();
         }
@@ -80,6 +80,8 @@ namespace Gamekit2D
         
         void PlayerFalling()
         {
+            if (pc == null) return;
+
             Falling.getPlaybackState(out PbState);
             if (!IsGrounded() && pc.m_MoveVector.y < -3 && !playerSubmerged)
             {
@@ -97,6 +99,8 @@ namespace Gamekit2D
 
         void PlayerLanded()
         {
+            if (pc == null) return;
+
             if (IsGrounded() && !wasGrounded && pc.m_MoveVector.y < 0)
             {
                 FMOD.Studio.EventInstance Landing = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Ellen/Ellen_Land");

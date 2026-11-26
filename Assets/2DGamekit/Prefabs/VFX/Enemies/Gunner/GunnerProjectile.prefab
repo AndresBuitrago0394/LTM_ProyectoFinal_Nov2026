@@ -5155,17 +5155,17 @@ MonoBehaviour:
   explosionTimer: 1.5
   fireEvent:
     Guid:
-      Data1: 1739511362
-      Data2: 1298277949
-      Data3: 2092643775
-      Data4: -2046649379
+      Data1: 74720453
+      Data2: 1263575752
+      Data3: 1293493385
+      Data4: 1106975927
     Path: event:/SFX/Enemies/Gunner/Projectile Shot
   impactEvent:
     Guid:
-      Data1: -2096384542
-      Data2: 1284102448
-      Data3: 600663214
-      Data4: 1909418824
+      Data1: 1002620410
+      Data2: 1202544411
+      Data3: 934441628
+      Data4: 13304009
     Path: event:/SFX/Enemies/Gunner/Projectile Hit
 --- !u!114 &114697907778358128
 MonoBehaviour:

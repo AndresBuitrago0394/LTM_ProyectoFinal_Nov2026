@@ -7384,12 +7384,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1143208596
-      Data2: 1219415811
-      Data3: -1503262053
-      Data4: -371167355
+      Data1: 1602980217
+      Data2: 1332189372
+      Data3: -136315512
+      Data4: -1431614884
     Path: event:/Interactables/Column Smash
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &249281652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
@@ -7410,12 +7411,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1143208596
-      Data2: 1219415811
-      Data3: -1503262053
-      Data4: -371167355
+      Data1: 1602980217
+      Data2: 1332189372
+      Data3: -136315512
+      Data4: -1431614884
     Path: event:/Interactables/Column Smash
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &250219673
 GameObject:
   m_ObjectHideFlags: 0
@@ -13272,12 +13274,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -454534368
-      Data2: 1278841678
-      Data3: 333727405
-      Data4: 2066352379
+      Data1: -1797672173
+      Data2: 1211039431
+      Data3: -983068502
+      Data4: 815421145
     Path: event:/Interactables/Pressure Pad
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &379955330
 GameObject:
   m_ObjectHideFlags: 0
@@ -14245,12 +14248,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1143208596
-      Data2: 1219415811
-      Data3: -1503262053
-      Data4: -371167355
+      Data1: 1602980217
+      Data2: 1332189372
+      Data3: -136315512
+      Data4: -1431614884
     Path: event:/Interactables/Column Smash
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &489276264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1987328121677966, guid: c57359a20b483084f9310f1d0b46f64a,
@@ -14271,12 +14275,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -1143208596
-      Data2: 1219415811
-      Data3: -1503262053
-      Data4: -371167355
+      Data1: 1602980217
+      Data2: 1332189372
+      Data3: -136315512
+      Data4: -1431614884
     Path: event:/Interactables/Column Smash
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &489474349
 GameObject:
   m_ObjectHideFlags: 0
@@ -21159,10 +21164,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1226362332
-      Data2: 1126602573
-      Data3: -1884059722
-      Data4: -934657645
+      Data1: 1146063585
+      Data2: 1294474309
+      Data3: -895428194
+      Data4: -1535264862
     Path: event:/SFX/Environment/Ambience_Zone2
   Event: 
   EventPlayTrigger: 1
@@ -21190,10 +21195,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1946410581
-      Data2: 1189980183
-      Data3: 1423863680
-      Data4: -1728599557
+      Data1: 812792942
+      Data2: 1085369038
+      Data3: -1793826155
+      Data4: 952264062
     Path: event:/Music/Lv2 Music
   Event: 
   EventPlayTrigger: 1
@@ -30674,12 +30679,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAudio
   audioEvent:
     Guid:
-      Data1: -897281697
-      Data2: 1104620987
-      Data3: -436844398
-      Data4: 971056887
+      Data1: 194364877
+      Data2: 1275082931
+      Data3: 908669630
+      Data4: -442689164
     Path: event:/Interactables/Key Pick-Up
   PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1001 &1735260187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38928,10 +38934,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1780530449
-      Data2: 1326373378
-      Data3: -865635678
-      Data4: -1099378045
+      Data1: -614145072
+      Data2: 1266524457
+      Data3: -1435400032
+      Data4: -378633436
     Path: event:/Interactables/Door Light
   Event: 
   EventPlayTrigger: 1
